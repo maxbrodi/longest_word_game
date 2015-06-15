@@ -1,0 +1,18 @@
+<img src="http://img.tvmag.lefigaro.fr/ImCon/Arti/69515/Romejko350.jpg">
+<h1>Welcome to the Romejko Challenge!</h1>
+<br>
+<h2> Your grid </h2>
+<p>
+   -
+  <% @grid.each do |letter| %>
+  <%= letter + " - " %>
+  <% end %>
+    |   <%= link_to "Another Grid!", game_path %>
+</p>
+<h2>Your best guess:</h2>
+<form action="/score" method="post">
+  <input type="text" name="attempt">
+  <input type="hidden" name="grid" value=<%= @grid.join %> >
+  <input type="hidden" name="start_time" value="<%= Time.now %>">
+  <input type="submit">
+</form>

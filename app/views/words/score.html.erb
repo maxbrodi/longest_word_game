@@ -1,0 +1,16 @@
+<img src="https://hp6djjqjlotf.firesize.com/250x170/g_center/http://cdn-premiere.ladmedia.fr/var/premiere/storage/images/tele/news-videos/video-des-chiffres-et-des-lettres-les-mots-les-plus-cocasses-3287708/58845280-1-fre-FR/VIDEO-Des-Chiffres-et-des-lettres-les-mots-les-plus-cocasses_reference.jpg" alt="la rom">
+<h1>Your score is <%= @score %> %</h1>
+<h2> <%= @message %> </h2>
+<p>We can frenchize your answer into: <strong><%= @translation %></strong></p>
+<br>
+
+<p>Number of games played: <strong><%= @attemps %> .</strong> </p>
+<p>Your average score is <strong><%= @mean %> %.</strong> Your best is <strong><%= @allscores.max %> %.</strong></p>
+<!-- <p> Ton score moyen est <%= @mean %> </p> -->
+
+<h2> Your last scores </h2>
+<% @allscores.each do |score| %>
+<ul>
+  <li><%= score %> %</li>
+</ul>
+<% end %>

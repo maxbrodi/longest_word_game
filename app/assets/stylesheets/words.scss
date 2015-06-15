@@ -1,0 +1,26 @@
+// Place all the styles related to the words controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  padding-top: 6em;
+  text-align: center;
+  background: #BDD9FF;
+  color: #251856;
+}
+
+a {
+  color: #4B1B77;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #E64150;
+  text-decoration: none;
+}
+
+ul li{
+  list-style-type: none;
+  padding: 0;
+  margin-left: -38px;
+}
